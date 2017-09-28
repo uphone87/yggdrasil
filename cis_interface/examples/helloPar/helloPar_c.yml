@@ -1,0 +1,23 @@
+---
+
+model:
+  name: helloPar_c
+  driver: GCCModelDriver
+  args: ./src/helloPar.c  # compile the C code with necessary libraries
+  copies: 2
+
+  inputs:
+    - name: inFile
+      driver: FileInputDriver
+      args: ./Input/input.txt
+    - name: helloParQueueIn
+      driver: RMQInputDriver
+      args: helloParQueue
+  
+  outputs:
+    - name: helloParQueueOut
+      driver: RMQOutputDriver
+      args: helloParQueue
+    - name: outFile
+      driver: FileOutputDriver
+      args: /tmp/output_helloPar.txt

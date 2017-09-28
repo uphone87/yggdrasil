@@ -26,6 +26,8 @@ class Driver(Thread):
             spent waiting on a process. Defaults to 60.
         sleeptime (float, optional): Time that driver should sleep for when
             sleep is called. Defaults to 0.01.
+        copy_suffix (str, optional): String that was added to the driver name
+            when it was copied. Defaults to ''.
 
     Attributes:
         name (str): Driver name.
@@ -39,6 +41,8 @@ class Driver(Thread):
         rank (int): Rank of the integration.
         workingDir (str): Working directory.
         errors (list): List of errors.
+        copy_suffix (str): String that was added to the driver name when it
+            was copied.
 
     """
     # =========================================================================
@@ -46,7 +50,8 @@ class Driver(Thread):
     # CLASSES TO ADD DRIVER FUNCTIONALITY. ALL OF THE CHILD CLASSES MUST HAVE
     # COMPATIBLE FORMATS (THE SAME NAMED ARGUMENTS).
     def __init__(self, name, yml={}, env={}, namespace=None, rank=None,
-                 workingDir=None, timeout=60.0, sleeptime=0.01):
+                 workingDir=None, timeout=60.0, sleeptime=0.01,
+                 copy_suffix=''):
         # Check if thread initialized to avoid doing it twice for drivers
         # with multiple inheritance that both need to call __init__
         if getattr(self, '_thread_initialized', False):  # pragma: debug
@@ -81,6 +86,7 @@ class Driver(Thread):
         self._terminated = False
         self.lock = RLock()
         self.errors = []
+        self.copy_suffix = copy_suffix
 
     # def __del__(self):
     #     # self.debug('~')
