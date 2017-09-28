@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpsi_ascii_file_input__t" kind="struct" language="C++" prot="public">
+    <compoundname>psiAsciiFileInput_t</compoundname>
+    <includes refid="_psi_interface_8h" local="no">PsiInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsi_ascii_file_input__t_1aff62f1ab107455f11afa8639678e9cf8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiFileInput_t::_valid</definition>
+        <argsstring></argsstring>
+        <name>_valid</name>
+        <briefdescription>
+<para>Indicates if the structure was succesfully initialized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1076" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_input__t_1aedbc53e8d193c4f3183bb4568f924d19" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* psiAsciiFileInput_t::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Path to local file or name of input channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1077" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_input__t_1ad438b6a4ccf9870a4fb071c242cd1f9c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiFileInput_t::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>0 for local file, 1 for input channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1078" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_input__t_1a520047f592ec4fe3b51430c9166c4cc2" prot="public" static="no" mutable="no">
+        <type><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+        <definition>asciiFile_t psiAsciiFileInput_t::_file</definition>
+        <argsstring></argsstring>
+        <name>_file</name>
+        <briefdescription>
+<para>Associated input handler for local files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1079" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_input__t_1a2b73b8fc2edb902484257337096573d9" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsi_input__t" kindref="compound">psiInput_t</ref></type>
+        <definition>psiInput_t psiAsciiFileInput_t::_psi</definition>
+        <argsstring></argsstring>
+        <name>_psi</name>
+        <briefdescription>
+<para>Associated input handler for input channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1080" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure of information for input from a file line by line. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>asciiFile_t</label>
+        <link refid="structascii_file__t"/>
+      </node>
+      <node id="11">
+        <label>psiInput_t</label>
+        <link refid="structpsi_input__t"/>
+      </node>
+      <node id="10">
+        <label>psiAsciiFileInput_t</label>
+        <link refid="structpsi_ascii_file_input__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_psi</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_file</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1075" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1075" bodyend="1081"/>
+    <listofallmembers>
+      <member refid="structpsi_ascii_file_input__t_1a520047f592ec4fe3b51430c9166c4cc2" prot="public" virt="non-virtual"><scope>psiAsciiFileInput_t</scope><name>_file</name></member>
+      <member refid="structpsi_ascii_file_input__t_1aedbc53e8d193c4f3183bb4568f924d19" prot="public" virt="non-virtual"><scope>psiAsciiFileInput_t</scope><name>_name</name></member>
+      <member refid="structpsi_ascii_file_input__t_1a2b73b8fc2edb902484257337096573d9" prot="public" virt="non-virtual"><scope>psiAsciiFileInput_t</scope><name>_psi</name></member>
+      <member refid="structpsi_ascii_file_input__t_1ad438b6a4ccf9870a4fb071c242cd1f9c" prot="public" virt="non-virtual"><scope>psiAsciiFileInput_t</scope><name>_type</name></member>
+      <member refid="structpsi_ascii_file_input__t_1aff62f1ab107455f11afa8639678e9cf8" prot="public" virt="non-virtual"><scope>psiAsciiFileInput_t</scope><name>_valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

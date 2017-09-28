@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="struct_ascii_file" kind="struct"><name>AsciiFile</name>
+    <member refid="struct_ascii_file_1a943bff7edf4fa3310cfc80093f719058" kind="variable"><name>filepath</name></member>
+    <member refid="struct_ascii_file_1a28af310876444d92cafbe961dfd7f447" kind="variable"><name>io_mode</name></member>
+    <member refid="struct_ascii_file_1ac6ec6edf3c80ec10b3076aaaad2d2543" kind="variable"><name>comment</name></member>
+    <member refid="struct_ascii_file_1ae4e7b9b8b86b0bee4835f2eb183f048c" kind="variable"><name>newline</name></member>
+    <member refid="struct_ascii_file_1a971e8089527d5d8be168a047ae66c116" kind="variable"><name>fd</name></member>
+  </compound>
+  <compound refid="struct_ascii_table" kind="struct"><name>AsciiTable</name>
+    <member refid="struct_ascii_table_1a6b71c65c319ebb789ff5a2a912b35d0c" kind="variable"><name>f</name></member>
+    <member refid="struct_ascii_table_1a02c0c95bda1032efb7d36ed046a81161" kind="variable"><name>format_str</name></member>
+    <member refid="struct_ascii_table_1a9d1eb5cae7de5f8086e13e77ab677cfd" kind="variable"><name>column</name></member>
+    <member refid="struct_ascii_table_1a8fb623eb767592c944c925e4fdf39630" kind="variable"><name>ncols</name></member>
+    <member refid="struct_ascii_table_1a2071d95515e2c0f1d6d3df70d37f1905" kind="variable"><name>format_typ</name></member>
+    <member refid="struct_ascii_table_1a697bf776cdb1d3d98197b0c8a574d8af" kind="variable"><name>format_siz</name></member>
+    <member refid="struct_ascii_table_1a0182498c6504b0b60b7a803409b330e6" kind="variable"><name>row_siz</name></member>
+    <member refid="struct_ascii_table_1a782403a4fbf29b3b6dceabec0282c83d" kind="variable"><name>status</name></member>
+  </compound>
+  <compound refid="_ascii_file_8h" kind="file"><name>AsciiFile.h</name>
+    <member refid="_ascii_file_8h_1ac68bae2984ae6cc400d0e6ca823dd28b" kind="define"><name>LINE_SIZE_MAX</name></member>
+    <member refid="_ascii_file_8h_1ad744132f03b4b89bb47911c4ec7a82f1" kind="typedef"><name>AsciiFile</name></member>
+    <member refid="_ascii_file_8h_1a3190a61794d85fda62485cea7650320e" kind="function"><name>af_is_open</name></member>
+    <member refid="_ascii_file_8h_1ae34d5f34cfaac1ecb64c0d98b8098a7b" kind="function"><name>af_open</name></member>
+    <member refid="_ascii_file_8h_1ad2594d6d1e3a868fde31070089a9f5f7" kind="function"><name>af_close</name></member>
+    <member refid="_ascii_file_8h_1aa715a34cb66225c368f6ecc2d9490275" kind="function"><name>af_is_comment</name></member>
+    <member refid="_ascii_file_8h_1aab169ebcefeef51fbdfd869ab95c1b91" kind="function"><name>af_readline_full</name></member>
+    <member refid="_ascii_file_8h_1a6735b69ee05db53b9fdabe358bb4fb26" kind="function"><name>af_writeline_full</name></member>
+    <member refid="_ascii_file_8h_1a8412b025390313d73923a4b16a6e90d4" kind="function"><name>ascii_file</name></member>
+  </compound>
+  <compound refid="_ascii_table_8h" kind="file"><name>AsciiTable.h</name>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001daca" kind="enum"><name>mytypes</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaaee847e634a4297b274316de8a8ca9921" kind="enumvalue"><name>STRING</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9cf4a0866224b0bb4a7a895da27c9c4c" kind="enumvalue"><name>FLOAT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa33465d1d419b1074fb259ef444609e92" kind="enumvalue"><name>DOUBLE</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9d7fa6997de0b485952dd28167ed2e56" kind="enumvalue"><name>SHORTSHORT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa7a1fe3ba88f0c16cb494922948a9597d" kind="enumvalue"><name>SHORT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaafd5a5f51ce25953f3db2c7e93eb7864a" kind="enumvalue"><name>INT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaaaee055c4a5aba7d55774e4f1c01dacea" kind="enumvalue"><name>LONG</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa6f20a0296b153acb8046f73b274794df" kind="enumvalue"><name>LONGLONG</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa46aa94ef4fd7b28578064b5e37420448" kind="enumvalue"><name>USHORTSHORT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9ae509995ac75484348487a7477900ca" kind="enumvalue"><name>USHORT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa4756f5bbd9f28d6b8905f32024b57398" kind="enumvalue"><name>UINT</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa574bf5ec73e28138b997d24464adb70c" kind="enumvalue"><name>ULONG</name></member>
+    <member refid="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9e339c35c454aba9d8ec635e45ef078e" kind="enumvalue"><name>ULONGLONG</name></member>
+    <member refid="_ascii_table_8h_1a29f3208e3f7725d88d70d6d962c49a52" kind="typedef"><name>AsciiTable</name></member>
+    <member refid="_ascii_table_8h_1aca9d2fd0c6970b310599be6a8464a744" kind="function"><name>at_open</name></member>
+    <member refid="_ascii_table_8h_1abe750d8ac30055a764f36e3ad1bad940" kind="function"><name>at_close</name></member>
+    <member refid="_ascii_table_8h_1a1f6ada43a43017875b96e6a6ae10b763" kind="function"><name>at_vreadline</name></member>
+    <member refid="_ascii_table_8h_1a37759590f8a514acb13cee60f428de09" kind="function"><name>at_vwriteline</name></member>
+    <member refid="_ascii_table_8h_1a7e2dc969d714274abae74fac7a6a2f2f" kind="function"><name>at_readline</name></member>
+    <member refid="_ascii_table_8h_1afb5566c5a9f296880db98f5ba15231a2" kind="function"><name>at_writeline</name></member>
+    <member refid="_ascii_table_8h_1a4a221d51656ea3ec0e3d59d6c3e70c91" kind="function"><name>at_writeformat</name></member>
+    <member refid="_ascii_table_8h_1ade6b829a9a7413b998ad9911f2828a69" kind="function"><name>at_discover_format_str</name></member>
+    <member refid="_ascii_table_8h_1a1091254a720936f5a21f1c553a7679a4" kind="function"><name>at_set_ncols</name></member>
+    <member refid="_ascii_table_8h_1a2725477103ea9884c974570b650af761" kind="function"><name>at_set_format_typ</name></member>
+    <member refid="_ascii_table_8h_1a0c944aa280eec8a1fd95f91419a6cd14" kind="function"><name>at_vbytes_to_array</name></member>
+    <member refid="_ascii_table_8h_1a985d327ec4713da33c9e114ca95a260e" kind="function"><name>at_varray_to_bytes</name></member>
+    <member refid="_ascii_table_8h_1a1f632de97f4a37847b535dd0ff8402d8" kind="function"><name>at_array_to_bytes</name></member>
+    <member refid="_ascii_table_8h_1a1245e6ef651ca627c9e867e70f708743" kind="function"><name>at_bytes_to_array</name></member>
+    <member refid="_ascii_table_8h_1a44ebc18807492d34c4209e768b050c68" kind="function"><name>at_cleanup</name></member>
+    <member refid="_ascii_table_8h_1a59b6e48fdb36589d3cb257f182ff225f" kind="function"><name>ascii_table</name></member>
+  </compound>
+  <compound refid="dir_a862424b14b5e0bd4b5f46d76b9d9fcd" kind="dir"><name>/home/ubuntu/langmm/cis_iterface/cis_interface</name>
+  </compound>
+  <compound refid="dir_e2e96a12fc04fec5957fa0cee9f792b8" kind="dir"><name>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio</name>
+  </compound>
+</doxygenindex>

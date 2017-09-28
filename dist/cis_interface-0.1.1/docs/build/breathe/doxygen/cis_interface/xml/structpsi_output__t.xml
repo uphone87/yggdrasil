@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpsi_output__t" kind="struct" language="C++" prot="public">
+    <compoundname>psiOutput_t</compoundname>
+    <includes refid="_psi_interface_8h" local="no">PsiInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsi_output__t_1a9ad7d02cf677183308724c7f9b8dbd52" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiOutput_t::_handle</definition>
+        <argsstring></argsstring>
+        <name>_handle</name>
+        <briefdescription>
+<para>Queue handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="233" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_output__t_1aee98b6f91ada5813222b6d0e70ee5223" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* psiOutput_t::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Queue name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="234" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_output__t_1ab0d091406566578aff30e29f8f254dc0" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* psiOutput_t::_fmt</definition>
+        <argsstring></argsstring>
+        <name>_fmt</name>
+        <briefdescription>
+<para>Format for formatting queue messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="235" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_output__t_1a8ce9cd65bd278b405de93b96c595e33b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiOutput_t::_nfmt</definition>
+        <argsstring></argsstring>
+        <name>_nfmt</name>
+        <briefdescription>
+<para>Number of fields expected from format string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="236" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Output queue structure. Contains information on an output queue. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="232" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="232" bodyend="237"/>
+    <listofallmembers>
+      <member refid="structpsi_output__t_1ab0d091406566578aff30e29f8f254dc0" prot="public" virt="non-virtual"><scope>psiOutput_t</scope><name>_fmt</name></member>
+      <member refid="structpsi_output__t_1a9ad7d02cf677183308724c7f9b8dbd52" prot="public" virt="non-virtual"><scope>psiOutput_t</scope><name>_handle</name></member>
+      <member refid="structpsi_output__t_1aee98b6f91ada5813222b6d0e70ee5223" prot="public" virt="non-virtual"><scope>psiOutput_t</scope><name>_name</name></member>
+      <member refid="structpsi_output__t_1a8ce9cd65bd278b405de93b96c595e33b" prot="public" virt="non-virtual"><scope>psiOutput_t</scope><name>_nfmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

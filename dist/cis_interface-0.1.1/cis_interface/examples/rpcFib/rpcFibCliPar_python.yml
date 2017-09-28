@@ -1,0 +1,9 @@
+---
+
+model:
+  name: rpcFibCliPar
+  driver: PythonModelDriver
+  args:
+    - ./src/rpcFibCliPar.py
+    - "{{ FIB_ITERATIONS }}"   # env_var for number of loops
+  client_of: rpcFibSrv  # Creates an RPC client queue $(client_of)_$(name)

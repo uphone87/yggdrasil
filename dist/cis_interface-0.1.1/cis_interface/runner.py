@@ -5,7 +5,6 @@ import logging
 from logging import debug, info, error
 import os
 import yaml
-import copy
 import pystache
 from pprint import pformat
 from itertools import chain
@@ -182,44 +181,19 @@ class CisRunner(object):
                 error("CisRunner: could not load yaml: %s: %s", modelYml, e)
                 raise  # Nothing started yet so just raise
 
-    def add_driver(self, dtype, yaml, yamldir, copy_num=0, orig_driver=None):
+    def add_driver(self, dtype, yaml, yamldir):
         r"""Add a driver to the appropriate driver dictionary with yamldir.
 
         Args:
             dtype (str): Driver type. Should be 'input', 'output',or 'model'.
             yaml (dict): YAML dictionary for the driver.
             yamldir (str): Full path to directory where the yaml is stored.
-            copy_num (int, optional): Number of this copy. Defaults to 0.
-            orig_driver (str, optional): Original model that copy was created
-                from. Defaults to driver's name.
 
         Raises:
-            ValueError: If dtype is not 'input', 'output' or 'model'.
+            ValueError: If dtype is not 'input', 'output',or 'model'.
             ValueError: If the driver name already exists.
 
         """
-        # Create copies
-        n_copies = int(yaml.pop('copies', 1))
-        if (n_copies > 1):
-            orig_copy = copy.deepcopy(yaml)
-            orig = self.add_driver(dtype, yaml, yamldir, 1)
-            orig['driver_copies'] = []
-            orig_copy['client_of'] = orig.get('client_of', [])
-            for i in range(1, n_copies):
-                copy_yaml = self.add_driver(dtype, copy.deepcopy(orig_copy),
-                                            yamldir, copy_num=(i + 1),
-                                            orig_driver=orig['name'])
-                orig['driver_copies'].append(copy_yaml['name'])
-            return
-        # Set defaults
-        yaml.setdefault('copy_suffix', '')
-        if orig_driver is None:
-            orig_driver = yaml['name']
-        yaml['orig_driver'] = orig_driver
-        if copy_num > 1:
-            yaml['copy_suffix'] += '_COPY%d' % copy_num
-        yaml['name'] = yaml['orig_driver'] + yaml['copy_suffix']
-        # Treat type of driver
         if dtype == 'input':
             dd = self.inputdrivers
             self._inputchannels.append(yaml['args'])
@@ -227,15 +201,13 @@ class CisRunner(object):
             dd = self.outputdrivers
             self._outputchannels.append(yaml['args'])
         elif dtype == 'model':
-            dd = self.modeldrivers
-            # Ensure inputs and outputs
             yaml.setdefault('inputs', [])
             yaml.setdefault('outputs', [])
             # Add server driver
             if yaml.get('is_server', False):
-                srv = {'name': yaml['orig_driver'],
+                srv = {'name': yaml['name'],
                        'driver': 'RMQServerDriver',
-                       'args': yaml['orig_driver']}
+                       'args': yaml['name']}
                 yaml['inputs'].append(srv)
                 yaml['clients'] = []
             # Add client driver
@@ -245,17 +217,18 @@ class CisRunner(object):
                     srv_names = [srv_names]
                 yaml['client_of'] = srv_names
                 for srv in srv_names:
-                    cli = {'name': '%s_%s' % (srv, yaml['orig_driver']),
+                    cli = {'name': '%s_%s' % (srv, yaml['name']),
                            'driver': 'RMQClientDriver',
                            'args': srv}
                     yaml['outputs'].append(cli)
             # Add I/O drivers for this model
             for inp in yaml['inputs']:
                 inp['model_driver'] = yaml['name']
-                self.add_driver('input', inp, yamldir, copy_num=copy_num)
+                self.add_driver('input', inp, yamldir)
             for inp in yaml['outputs']:
                 inp['model_driver'] = yaml['name']
-                self.add_driver('output', inp, yamldir, copy_num=copy_num)
+                self.add_driver('output', inp, yamldir)
+            dd = self.modeldrivers
         else:
             raise ValueError("%s is not a recognized driver type." % dtype)
         # Check to make sure there arn't two drivers with the same name
@@ -270,13 +243,12 @@ class CisRunner(object):
         yaml['kwargs'] = {}
         kws_ignore = ['name', 'driver', 'args', 'kwargs', 'onexit',
                       'input', 'inputs', 'output', 'outputs', 'clients',
-                      'model_driver', 'orig_driver', 'driver_copies']
+                      'model_driver']
         for k in yaml:
             if k not in kws_ignore:
                 yaml['kwargs'][k] = yaml[k]
         yaml['workingDir'] = yamldir
         dd[yaml['name']] = yaml
-        return yaml
 
     def run(self):
         r"""Run all of the models and wait for them to exit."""
@@ -499,11 +471,10 @@ class CisRunner(object):
             srv['clients'].remove(model['name'])
             # Stop server if there are not any more clients
             if len(srv['clients']) == 0:
-                for s in [srv_name] + srv.get('driver_copies', []):
-                    iod = self.inputdrivers[s]
-                    iod['instance'].stop()
-                    self.do_exits(iod)
-                    self.modeldrivers[s]['instance'].stop()
+                iod = self.inputdrivers[srv_name]
+                iod['instance'].stop()
+                self.do_exits(iod)
+                srv['instance'].stop()
                 # self.do_model_exits(srv)
         # Stop associated IO drivers
         for drv in self.io_drivers(model['name']):

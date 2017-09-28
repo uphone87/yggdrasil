@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_ascii_table_input" kind="class" language="C++" prot="public">
+    <compoundname>PsiAsciiTableInput</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_psi_ascii_table_input_1addffcef0af2986246201c366c4f5942c" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref></type>
+        <definition>psiAsciiTableInput_t PsiAsciiTableInput::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="162" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a75626a21362193ab71e53b0e395f8d4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiTableInput::PsiAsciiTableInput</definition>
+        <argsstring>(const char *name, int src_type=1)</argsstring>
+        <name>PsiAsciiTableInput</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_type</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="164" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="164" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1abad6b196dddb862f33c760516aa673f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiTableInput::~PsiAsciiTableInput</definition>
+        <argsstring>()</argsstring>
+        <name>~PsiAsciiTableInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="173" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1ade41e5aa0af9200b81fec07c1512e6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv</definition>
+        <argsstring>(char **data, int len)</argsstring>
+        <name>recv</name>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="175" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a7cbbbc6ddf1095e473dbf00653d4520d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv_row</definition>
+        <argsstring>(int fake_first=0,...)</argsstring>
+        <name>recv_row</name>
+        <param>
+          <type>int</type>
+          <declname>fake_first</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="176" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="176" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a3e6a42ad44ccd0293f07aacb8509ac2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv_array</definition>
+        <argsstring>(int fake_first=0,...)</argsstring>
+        <name>recv_array</name>
+        <param>
+          <type>int</type>
+          <declname>fake_first</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="184" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="184" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>PsiAsciiTableInput</label>
+        <link refid="class_psi_ascii_table_input"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>_pi</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>psiInput_t</label>
+        <link refid="structpsi_input__t"/>
+      </node>
+      <node id="18">
+        <label>psiAsciiTableInput_t</label>
+        <link refid="structpsi_ascii_table_input__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>_psi</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="160" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="160" bodyend="193"/>
+    <listofallmembers>
+      <member refid="class_psi_ascii_table_input_1addffcef0af2986246201c366c4f5942c" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>_pi</name></member>
+      <member refid="class_psi_ascii_table_input_1a75626a21362193ab71e53b0e395f8d4c" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>PsiAsciiTableInput</name></member>
+      <member refid="class_psi_ascii_table_input_1ade41e5aa0af9200b81fec07c1512e6a2" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv</name></member>
+      <member refid="class_psi_ascii_table_input_1a3e6a42ad44ccd0293f07aacb8509ac2d" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv_array</name></member>
+      <member refid="class_psi_ascii_table_input_1a7cbbbc6ddf1095e473dbf00653d4520d" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv_row</name></member>
+      <member refid="class_psi_ascii_table_input_1abad6b196dddb862f33c760516aa673f0" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>~PsiAsciiTableInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

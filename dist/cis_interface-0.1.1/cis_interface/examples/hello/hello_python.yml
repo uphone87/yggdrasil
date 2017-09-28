@@ -1,0 +1,23 @@
+---
+
+model:
+  name: hello_python
+  driver: PythonModelDriver
+  args: ./src/hello.py  # Runs the python script using default python
+
+  inputs:
+    - name: inFile
+      driver: FileInputDriver
+      args: ./Input/input.txt
+    - name: helloQueueIn    
+      driver: RMQInputDriver
+      args: helloQueue
+      onexit: on_model_exit
+
+  outputs:
+    - name: helloQueueOut    
+      driver: RMQOutputDriver
+      args: helloQueue
+    - name: outFile
+      driver: FileOutputDriver
+      args: /tmp/output_hello.txt

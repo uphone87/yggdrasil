@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_input" kind="class" language="C++" prot="public">
+    <compoundname>PsiInput</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_psi_input_1a7392943147510fd48430b185a30bebbf" prot="private" static="no" mutable="no">
+        <type><ref refid="structpsi_input__t" kindref="compound">psiInput_t</ref></type>
+        <definition>psiInput_t PsiInput::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="14" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_input_1ac796a2dbddfc6b6aa54841d8c762cc6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiInput::PsiInput</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>PsiInput</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="17" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_input_1a480b3f1424806a23c3a1c77d590eb216" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiInput::recv</definition>
+        <argsstring>(char *data, int len)</argsstring>
+        <name>recv</name>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="19" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_input_1a9410879a8e96915adcad5d6ebb5f224c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiInput::recv_nolimit</definition>
+        <argsstring>(char **data, int len)</argsstring>
+        <name>recv_nolimit</name>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="23" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="13" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="13" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_psi_input_1a7392943147510fd48430b185a30bebbf" prot="private" virt="non-virtual"><scope>PsiInput</scope><name>_pi</name></member>
+      <member refid="class_psi_input_1ac796a2dbddfc6b6aa54841d8c762cc6c" prot="public" virt="non-virtual"><scope>PsiInput</scope><name>PsiInput</name></member>
+      <member refid="class_psi_input_1a480b3f1424806a23c3a1c77d590eb216" prot="public" virt="non-virtual"><scope>PsiInput</scope><name>recv</name></member>
+      <member refid="class_psi_input_1a9410879a8e96915adcad5d6ebb5f224c" prot="public" virt="non-virtual"><scope>PsiInput</scope><name>recv_nolimit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

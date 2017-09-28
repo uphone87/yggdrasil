@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_rpc_client" kind="class" language="C++" prot="public">
+    <compoundname>PsiRpcClient</compoundname>
+    <basecompoundref refid="class_psi_rpc" prot="public" virt="non-virtual">PsiRpc</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_psi_rpc_client_1a0e40bfe85b5d915c27bd5bd07a2886f3" prot="public" static="no" mutable="no">
+        <type>psiRpc_t</type>
+        <definition>psiRpc_t PsiRpcClient::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="84" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_rpc_client_1a77a4dd609c4bd82862bea5fc0651ba02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiRpcClient::PsiRpcClient</definition>
+        <argsstring>(const char *name, char *outFormat, char *inFormat)</argsstring>
+        <name>PsiRpcClient</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>outFormat</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>inFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="86" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="86" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_rpc_client_1a309961dea218c53e1b1ccba54c0817c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiRpcClient::call</definition>
+        <argsstring>(int fake_first=0,...)</argsstring>
+        <name>call</name>
+        <param>
+          <type>int</type>
+          <declname>fake_first</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="89" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="89" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>PsiRpc</label>
+        <link refid="class_psi_rpc"/>
+      </node>
+      <node id="16">
+        <label>PsiRpcClient</label>
+        <link refid="class_psi_rpc_client"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>PsiRpc</label>
+        <link refid="class_psi_rpc"/>
+      </node>
+      <node id="18">
+        <label>PsiRpcClient</label>
+        <link refid="class_psi_rpc_client"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="82" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="82" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_psi_rpc_client_1a0e40bfe85b5d915c27bd5bd07a2886f3" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>_pi</name></member>
+      <member refid="class_psi_rpc_client_1a309961dea218c53e1b1ccba54c0817c2" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>call</name></member>
+      <member refid="class_psi_rpc_1a59e6a3c10d5d3b8b5ddbad8272c21609" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>PsiRpc</name></member>
+      <member refid="class_psi_rpc_client_1a77a4dd609c4bd82862bea5fc0651ba02" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>PsiRpcClient</name></member>
+      <member refid="class_psi_rpc_1ab3f5b5be2c8a046828803b9a92b2c5e3" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>recv</name></member>
+      <member refid="class_psi_rpc_1acda49b14f82701bfaf0e56b3069fcee3" prot="public" virt="non-virtual"><scope>PsiRpcClient</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

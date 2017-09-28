@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_e47a34020f69a6cf0aa9a10e0fa7d928" kind="dir">
+    <compoundname>/home/ubuntu/langmm/cis_iterface/cis_interface/interface</compoundname>
+    <innerfile refid="_psi_interface_8m">PsiInterface.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/"/>
+  </compounddef>
+</doxygen>

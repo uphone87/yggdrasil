@@ -1,0 +1,1331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_ascii_table_8h" kind="file" language="C++">
+    <compoundname>AsciiTable.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">regex.h</includes>
+    <includes refid="_ascii_file_8h" local="yes">AsciiFile.h</includes>
+    <includedby refid="_psi_interface_8h" local="no">/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>stdarg.h</label>
+      </node>
+      <node id="9">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h</label>
+        <link refid="_ascii_table_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>string.h</label>
+      </node>
+      <node id="15">
+        <label>AsciiFile.h</label>
+        <link refid="_ascii_file_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>regex.h</label>
+      </node>
+      <node id="11">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h</label>
+        <link refid="_ascii_table_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp</label>
+        <link refid="_psi_interface_8hpp_source"/>
+      </node>
+      <node id="17">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h</label>
+        <link refid="_psi_interface_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structascii_table__t" prot="public">asciiTable_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001daca" prot="public" static="no">
+        <name>mytypes</name>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaaee847e634a4297b274316de8a8ca9921" prot="public">
+          <name>STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9cf4a0866224b0bb4a7a895da27c9c4c" prot="public">
+          <name>FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa33465d1d419b1074fb259ef444609e92" prot="public">
+          <name>DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9d7fa6997de0b485952dd28167ed2e56" prot="public">
+          <name>SHORTSHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa7a1fe3ba88f0c16cb494922948a9597d" prot="public">
+          <name>SHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaafd5a5f51ce25953f3db2c7e93eb7864a" prot="public">
+          <name>INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaaaee055c4a5aba7d55774e4f1c01dacea" prot="public">
+          <name>LONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa6f20a0296b153acb8046f73b274794df" prot="public">
+          <name>LONGLONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa46aa94ef4fd7b28578064b5e37420448" prot="public">
+          <name>USHORTSHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9ae509995ac75484348487a7477900ca" prot="public">
+          <name>USHORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa4756f5bbd9f28d6b8905f32024b57398" prot="public">
+          <name>UINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa574bf5ec73e28138b997d24464adb70c" prot="public">
+          <name>ULONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_ascii_table_8h_1a14d2a55c4a978c4cfb618c491001dacaa9e339c35c454aba9d8ec635e45ef078e" prot="public">
+          <name>ULONGLONG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumerated types to be used for interpreting formats. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="12" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_ascii_table_8h_1ac239c9dc53457dcb09bffb7dd0f1474e" prot="public" static="no">
+        <type>struct <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+        <definition>typedef struct asciiTable_t  asciiTable_t</definition>
+        <argsstring></argsstring>
+        <name>asciiTable_t</name>
+        <briefdescription>
+<para>Structure containing information about an ASCII table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_ascii_table_8h_1a2450e4b7c3a254afcfd62c54f4f33bcb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int compile_regex</definition>
+        <argsstring>(regex_t *r, const char *regex_text)</argsstring>
+        <name>compile_regex</name>
+        <param>
+          <type>regex_t *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>regex_text</declname>
+        </param>
+        <briefdescription>
+<para>Create a regex from a character array. Adapted from <ulink url="https://www.lemoda.net/c/unix-regex/">https://www.lemoda.net/c/unix-regex/</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to regex_t. Resutling regex expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">regex_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to text that should be compiled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>static int Success or failure of compilation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="25" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="25" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1acc835d46e359011a0f1fbaba3f28b03b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int count_matches</definition>
+        <argsstring>(const char *regex_text, const char *to_match)</argsstring>
+        <name>count_matches</name>
+        <param>
+          <type>const char *</type>
+          <declname>regex_text</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>to_match</declname>
+        </param>
+        <briefdescription>
+<para>Count the number of times a regular expression is matched in a string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">regex_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string that should be compiled into a regex. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">to_match</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string that should be checked for matches. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of matches found. -1 is returned if the regex could not be compiled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="48" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="48" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a2059b2fabbacee5e6de895822beb99cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int count_formats</definition>
+        <argsstring>(const char *fmt_str)</argsstring>
+        <name>count_formats</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt_str</declname>
+        </param>
+        <briefdescription>
+<para>Count how many % format specifiers there are in format string. Formats are found by counting the number of matches to the regular expression adapted from <ulink url="https://stackoverflow.com/questions/446285/validate-sprintf-format-from-input-field-with-regex">https://stackoverflow.com/questions/446285/validate-sprintf-format-from-input-field-with-regex</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fmt_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string that should be searched for format specifiers. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of format specifiers found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="79" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1aa392a2b640022f5fc7f928660f3d4859" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_open</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_open</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Open the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 if opened successfully, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="104" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1aafdce9672f7a9645a1a7b9af886727ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void at_close</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_close</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Close the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 if ocloseded successfully, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="114" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a5d3bdde3a0beb050a8699e7d7907d4e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_vreadline</definition>
+        <argsstring>(const asciiTable_t t, va_list ap)</argsstring>
+        <name>at_vreadline</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Read a line from the file and parse it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>va_list Pointers to variables where parsed arguments should be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters read. -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="126" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="126" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a2ad380bc74295b4f561d5d496c558843" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_vwriteline</definition>
+        <argsstring>(const asciiTable_t t, va_list ap)</argsstring>
+        <name>at_vwriteline</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Format arguments to form a line and write it to the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>va_list Variables that should be formatted using the format string to create a line in the table. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters written. -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="154" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1ae69d8028086c1dfbc9d1f3c47d2b58cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_readline</definition>
+        <argsstring>(const asciiTable_t t,...)</argsstring>
+        <name>at_readline</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Read a line from the file and parse it. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to variables where parsed arguments should be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters read. -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="167" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="167" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a3537e4479c4c6146115a606c4be89fb0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_writeline</definition>
+        <argsstring>(const asciiTable_t t,...)</argsstring>
+        <name>at_writeline</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Format arguments to form a line and write it to the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variables that should be formatted using the format string to create a line in the table. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters written. -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="183" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="183" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a99cf4e10276fa57632a44489ce1883ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_writeformat</definition>
+        <argsstring>(const asciiTable_t t)</argsstring>
+        <name>at_writeformat</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Write the format string the the file, prepending it with a comment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters written. -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="197" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="197" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a065c972ea3d12c9c0b3b18f60ae2fb67" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_discover_format_str</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_discover_format_str</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Try to find the format string in the file. The format string is assumed to start with a comment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="215" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="215" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a0603f9b3c88d350047d07d7ae1be7885" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_set_ncols</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_set_ncols</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of columns by counting the format specifiers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The number of columns counted. Negative values indicate errors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="242" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="242" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1ab0a82f6cbb7d372d6ea2fbab1da2d4af" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_set_format_typ</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_set_format_typ</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Determine the column types by parsing the format string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 on success, -1 on failure. TODO: switch to regex </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="257" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="257" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1aaffcc61102c5cdd0048523c1b8a3fd8b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_vbytes_to_array</definition>
+        <argsstring>(const asciiTable_t t, const char *data, const int data_siz, va_list ap)</argsstring>
+        <name>at_vbytes_to_array</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>data_siz</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Convert data into arrays for columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to memory containing data that should be parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_siz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant int Size of data in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>va_list Pointers to pointers to memory where columns should be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of rows read on success, -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="371" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="371" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1ad5d3936998aef99536a4373fff968ff5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_varray_to_bytes</definition>
+        <argsstring>(const asciiTable_t t, char **data, int nrows, va_list ap)</argsstring>
+        <name>at_varray_to_bytes</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nrows</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+<para>Encode a set of arrays as bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to memory where encoded arrays should be stored. It does not need to be allocate, only declared. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Number of rows in each column array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>va_list Pointers to memory where column data is stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="412" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="412" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a1d4ab07625e12ae9d6782ed0d3f014f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_bytes_to_array</definition>
+        <argsstring>(const asciiTable_t t, char *data, int data_siz,...)</argsstring>
+        <name>at_bytes_to_array</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_siz</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Convert data into arrays for columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to memory containing data that should be parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_siz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant int Size of data in bytes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to pointers to memory where columns should be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of rows read on success, -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="438" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="438" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1af2c77919a811f2deb7e7579465bf4049" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int at_array_to_bytes</definition>
+        <argsstring>(const asciiTable_t t, char **data, int nrows,...)</argsstring>
+        <name>at_array_to_bytes</name>
+        <param>
+          <type>const <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nrows</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Encode a set of arrays as bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to memory where encoded arrays should be stored. It does not need to be allocate, only declared. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nrows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Number of rows in each column array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to memory where column data is stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="455" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="455" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a4334fe77589dbea1626482da3fa54abb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void at_cleanup</definition>
+        <argsstring>(asciiTable_t *t)</argsstring>
+        <name>at_cleanup</name>
+        <param>
+          <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Deallocate and clean up <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="468" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="468" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_table_8h_1a2cc033a42c5436c373793d378b806e9c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref></type>
+        <definition>static asciiTable_t asciiTable</definition>
+        <argsstring>(const char *filepath, const char *io_mode, const char *format_str, const char *comment, const char *column, const char *newline)</argsstring>
+        <name>asciiTable</name>
+        <param>
+          <type>const char *</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>io_mode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format_str</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>comment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>newline</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to file path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">io_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to I/O mode. &quot;r&quot; for read, &quot;w&quot; for write. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string describing the format of the table roads. Required for io_mode == &quot;w&quot;, but if set to NULL for io_mode == &quot;r&quot;, it will attempt to be read from the table. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to character(s) that should indicate a comment. If NULL, comment is set to &quot;# &quot;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to character(s) that should separate columns in the table. If NULL, column is set to &quot;\t&quot;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to character(s) that should indicate a newline. If NULL, newline is set to &quot;\n&quot;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref> table structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="494" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="494" bodyend="529"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;regex.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>include<sp/>if<sp/>not<sp/>already<sp/>included</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>(ASCIIFILE_INCLUDED)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AsciiFile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>mytypes<sp/>{<sp/>STRING,<sp/>FLOAT,<sp/>DOUBLE,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHORTSHORT,<sp/>SHORT,<sp/>INT,<sp/>LONG,<sp/>LONGLONG,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USHORTSHORT,<sp/>USHORT,<sp/>UINT,<sp/>ULONG,<sp/>ULONGLONG<sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compile_regex<sp/>(regex_t<sp/>*<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>regex_text)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status<sp/>=<sp/>regcomp<sp/>(r,<sp/>regex_text,<sp/>REG_EXTENDED|REG_NEWLINE);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>error_message[LINE_SIZE_MAX];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>regerror<sp/>(status,<sp/>r,<sp/>error_message,<sp/>LINE_SIZE_MAX);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Regex<sp/>error<sp/>compiling<sp/>&apos;%s&apos;:<sp/>%s\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>regex_text,<sp/>error_message);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count_matches(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*regex_text,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*to_match)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_match<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>regex_t<sp/>r;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/>compile_regex(&amp;r,<sp/>regex_text);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>until<sp/>string<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>p<sp/>=<sp/>to_match;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_sub_matches<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>regmatch_t<sp/>m[n_sub_matches];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nomatch<sp/>=<sp/>regexec(&amp;r,<sp/>p,<sp/>n_sub_matches,<sp/>m,<sp/>0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nomatch)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>n_match++;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>+=<sp/>m[0].rm_eo;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n_match;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count_formats(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt_str)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fmt_regex<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%([[:digit:]]+\\$)?[+-]?([<sp/>0]|\&apos;.{1})?-?[[:digit:]]*(\\.[[:digit:]]+)?[lhjztL]*[bcdeEufFgGosxX]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>count_matches(fmt_regex,<sp/>fmt_str);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;%d,<sp/>%s\n&quot;,<sp/>ret,<sp/>fmt_str);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structascii_table__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="88" refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/><ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>;<sp/></highlight></codeline>
+<codeline lineno="89" refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>[LINE_SIZE_MAX];<sp/></highlight></codeline>
+<codeline lineno="90" refid="structascii_table__t_1a4c09956acb7a76e0431d9deb6f27be7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t_1a4c09956acb7a76e0431d9deb6f27be7e" kindref="member">column</ref>[64];<sp/></highlight></codeline>
+<codeline lineno="91" refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref>;<sp/></highlight></codeline>
+<codeline lineno="92" refid="structascii_table__t_1aaa59065a52a15e3dd33c6e043941ed8b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structascii_table__t_1aaa59065a52a15e3dd33c6e043941ed8b" kindref="member">format_typ</ref>;<sp/></highlight></codeline>
+<codeline lineno="93" refid="structascii_table__t_1a807c3654eee6e0cedc1d8ce1d3e73b17" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structascii_table__t_1a807c3654eee6e0cedc1d8ce1d3e73b17" kindref="member">format_siz</ref>;<sp/></highlight></codeline>
+<codeline lineno="94" refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref>;<sp/></highlight></codeline>
+<codeline lineno="95" refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref>;<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}<sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_open(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>af_open(&amp;((*t).f));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>at_close(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>af_close(&amp;((*t).f));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_vreadline(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/>va_list<sp/>ap)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>0,<sp/>com<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nread<sp/>=<sp/>LINE_SIZE_MAX;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(nread);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((ret<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(com<sp/>==<sp/>1))<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>af_readline_full(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>,<sp/>&amp;line,<sp/>&amp;nread);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>com<sp/>=<sp/>af_is_comment(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>,<sp/>line);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sret<sp/>=<sp/>vsscanf(line,<sp/>t.<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>,<sp/>ap);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sret<sp/>!=<sp/>t.<ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;at_vreadline:<sp/>%d<sp/>arguments<sp/>filled,<sp/>but<sp/>%d<sp/>were<sp/>expected\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sret,<sp/>t.<ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>free(line);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_vwriteline(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/>va_list<sp/>ap)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>vfprintf(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref>,<sp/>t.<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>,<sp/>ap);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_readline(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>va_list<sp/>ap;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>va_start(ap,<sp/>t);<sp/></highlight><highlight class="comment">//<sp/>might<sp/>need<sp/>to<sp/>use<sp/>last<sp/>element<sp/>in<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>at_vreadline(t,<sp/>ap);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>va_end(ap);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_writeline(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>va_list<sp/>ap;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>va_start(ap,<sp/>t);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>at_vwriteline(t,<sp/>ap);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>va_end(ap);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_writeformat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_open(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>fwrite(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>,<sp/>1,<sp/>strlen(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>),<sp/>t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/>af_writeline_full(t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref>,<sp/>t.<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_discover_format_str(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>at_open(t);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nread<sp/>=<sp/>LINE_SIZE_MAX;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(nread);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(getline(&amp;line,<sp/>&amp;nread,<sp/>(*t).f.fd)<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_comment((*t).f,<sp/>line)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count_formats(line)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy((*t).format_str,<sp/>line<sp/>+<sp/>strlen((*t).f.comment));</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>at_close(t);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>free(line);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_set_ncols(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Assumes<sp/>that<sp/>format_str<sp/>already<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>count<sp/>=<sp/>count_formats((*t).format_str);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>(*t).ncols<sp/>=<sp/>count;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_set_format_typ(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>(*t).format_typ<sp/>=<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)malloc((*t).ncols*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>(*t).format_siz<sp/>=<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)malloc((*t).ncols*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>beg<sp/>=<sp/>0,<sp/>end;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>icol<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ifmt[100];</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>(*t).row_siz<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(beg<sp/>&lt;<sp/>strlen((*t).format_str))<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[beg]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>end<sp/>=<sp/>beg;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(end<sp/>&lt;<sp/>strlen((*t).format_str))<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Advance<sp/>end<sp/>to<sp/>next<sp/>column<sp/>separator<sp/>or<sp/>new<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((strncmp((*t).format_str<sp/>+<sp/>end,<sp/>(*t).column,<sp/>strlen((*t).column))<sp/>==<sp/>0)<sp/>||</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(strncmp((*t).format_str<sp/>+<sp/>end,<sp/>(*t).f.newline,<sp/>strlen((*t).f.newline))<sp/>==<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strncpy(ifmt,<sp/>&amp;((*t).format_str)[beg],<sp/>end-beg);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ifmt[end-beg]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>String<sp/>(variable<sp/>length)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>STRING;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>len_fmt[100];</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strncpy(len_fmt,<sp/>&amp;((*t).format_str)[beg+1],<sp/>end-beg-2);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sscanf(len_fmt,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;((*t).format_siz[icol]));</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;e&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;E&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;g&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>DOUBLE;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(double);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hack<sp/>to<sp/>allow<sp/>double<sp/>to<sp/>be<sp/>specified</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>((*t).format_str[end-2]<sp/>==<sp/>&apos;l&apos;)<sp/>{<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>DOUBLE;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/>sizeof(double);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>}<sp/>else<sp/>{<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>FLOAT;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/>sizeof(float);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>}<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;d&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;i&apos;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Integers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-3]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>SHORTSHORT;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>SHORT;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(short);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-3]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>LONGLONG;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>LONG;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(long);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>INT;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;u&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">)<sp/>||</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((*t).format_str[end-1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;X&apos;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unsigned<sp/>integers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-3]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>USHORTSHORT;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>USHORT;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_str[end-3]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;l&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>ULONGLONG;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>ULONG;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol]<sp/>=<sp/>UINT;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*t).format_siz[icol]<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>parse<sp/>format<sp/>string:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>ifmt);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;%d:<sp/>%s,<sp/>typ<sp/>=<sp/>%d,<sp/>siz<sp/>=<sp/>%d\n&quot;,<sp/>icol,<sp/>ifmt,<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/>(*t).format_typ[icol],<sp/>(*t).format_siz[icol]);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(*t).row_siz<sp/>+=<sp/>(*t).format_siz[icol];</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>icol++;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>end++;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>beg++;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_vbytes_to_array(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_siz,<sp/>va_list<sp/>ap)<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>size<sp/>of<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>int<sp/>data_siz<sp/>=<sp/>strlen(data);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((data_siz<sp/>%<sp/>t.<ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref>)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Data<sp/>size<sp/>(%d)<sp/>not<sp/>an<sp/>even<sp/>number<sp/>of<sp/>rows<sp/>(row<sp/>size<sp/>is<sp/>%d)\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_siz,<sp/>t.<ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref>);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrows<sp/>=<sp/>data_siz<sp/>/<sp/>t.<ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref>;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cur_pos<sp/>=<sp/>0,<sp/>col_siz;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>t.<ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**temp;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>col_siz<sp/>=<sp/>nrows*t.<ref refid="structascii_table__t_1a807c3654eee6e0cedc1d8ce1d3e73b17" kindref="member">format_siz</ref>[i];</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>va_arg(ap,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>*temp<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(col_siz);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C<sp/>order<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>for<sp/>(int<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>nrows;<sp/>j++)<sp/>{<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>memcpy(*temp<sp/>+<sp/>j*t.format_siz[i],<sp/>data<sp/>+<sp/>j*t.row_siz<sp/>+<sp/>cur_pos,<sp/>t.format_siz[i]);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>}<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>cur_pos<sp/>+=<sp/>t.format_siz[i];<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>F<sp/>order<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(*temp,<sp/>data+cur_pos,<sp/>col_siz);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_pos<sp/>+=<sp/>col_siz;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;col<sp/>%d:<sp/>cur_pos<sp/>=<sp/>%d,<sp/>col_siz<sp/>=<sp/>%d,<sp/>data<sp/>=<sp/>%s,<sp/>raw_data<sp/>=<sp/>&quot;,<sp/>i,<sp/>cur_pos,<sp/>col_siz,<sp/>*temp);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>fwrite(*temp,<sp/>col_siz,<sp/>1,<sp/>stdout);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;\n&quot;);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nrows;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_varray_to_bytes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrows,<sp/>va_list<sp/>ap)<sp/>{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Allocate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/>*data<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)realloc(*data,<sp/>nrows*t.<ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref>);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cur_pos<sp/>=<sp/>0,<sp/>col_siz;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*temp;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>t.<ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>col_siz<sp/>=<sp/>nrows*t.<ref refid="structascii_table__t_1a807c3654eee6e0cedc1d8ce1d3e73b17" kindref="member">format_siz</ref>[i];</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>va_arg(ap,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(*data+cur_pos,<sp/>temp,<sp/>col_siz);</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_pos<sp/>+=<sp/>col_siz;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cur_pos;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_bytes_to_array(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_siz,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/>va_list<sp/>ap;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/>va_start(ap,<sp/>data_siz);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>at_vbytes_to_array(t,<sp/>data,<sp/>data_siz,<sp/>ap);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/>va_end(ap);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>at_array_to_bytes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrows,<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/>va_list<sp/>ap;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/>va_start(ap,<sp/>nrows);</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>at_varray_to_bytes(t,<sp/>data,<sp/>nrows,<sp/>ap);</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/>va_end(ap);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>at_cleanup(<ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_typ)</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>free((*t).format_typ);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).format_siz)</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/>free((*t).format_siz);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>(*t).format_typ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/>(*t).format_siz<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="475"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>asciiTable(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filepath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*io_mode,</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*comment,</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_table__t_1a4c09956acb7a76e0431d9deb6f27be7e" kindref="member">column</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*newline)<sp/>{</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><ref refid="structascii_table__t" kindref="compound">asciiTable_t</ref><sp/>t;</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/>strcpy(t.<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>,<sp/></highlight><highlight class="stringliteral">&quot;\0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1a837095bd2a245987e98f2bdd1fccaa94" kindref="member">ncols</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1aaa59065a52a15e3dd33c6e043941ed8b" kindref="member">format_typ</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1a807c3654eee6e0cedc1d8ce1d3e73b17" kindref="member">format_siz</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1aaa2f0c09c59e6b4cdad4e3845552da35" kindref="member">row_siz</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_table__t_1a1e211c26164429dca7a616e6a8af64a6" kindref="member">f</ref><sp/>=<sp/>asciiFile(filepath,<sp/>io_mode,<sp/>comment,<sp/>newline);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>defaults<sp/>for<sp/>optional<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(column<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_table__t_1a4c09956acb7a76e0431d9deb6f27be7e" kindref="member">column</ref>,<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_table__t_1a4c09956acb7a76e0431d9deb6f27be7e" kindref="member">column</ref>,<sp/>column);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Guess<sp/>format<sp/>string<sp/>from<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(format_str<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(io_mode,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>=<sp/>at_discover_format_str(&amp;t);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_table__t_1a030a09e49d0cb900ae0e3f6103229d14" kindref="member">format_str</ref>,<sp/>format_str);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>number<sp/>of<sp/>columns<sp/>&amp;<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/>t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>=<sp/>at_set_ncols(&amp;t);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>t.<ref refid="structascii_table__t_1a3a1b4f901f6cad135a0600a22942c43b" kindref="member">status</ref><sp/>=<sp/>at_set_format_typ(&amp;t);</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;status<sp/>=<sp/>%d\n&quot;,<sp/>t.status);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;format_str<sp/>=<sp/>%s\n&quot;,<sp/>t.format_str);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>printf(&quot;ncols<sp/>=<sp/>%d,<sp/>row_siz<sp/>=<sp/>%d\n&quot;,<sp/>t.ncols,<sp/>t.row_siz);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h"/>
+  </compounddef>
+</doxygen>
