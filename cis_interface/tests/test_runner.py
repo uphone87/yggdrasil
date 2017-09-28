@@ -59,9 +59,9 @@ class TestCisRunner(object):
 
     def test_add_driver(self):
         r"""Test add_driver."""
-        nt.assert_raises(ValueError, self.runner.add_driver, 'fake_type', {}, '')
         xname = list(self.runner.inputdrivers.keys())[0]
         x = self.runner.inputdrivers[xname]
+        nt.assert_raises(ValueError, self.runner.add_driver, 'fake_type', x, '')
         nt.assert_raises(ValueError, self.runner.add_driver, 'input', x,
                          x['workingDir'])
         x = self.runner.inputdrivers.pop(xname)
