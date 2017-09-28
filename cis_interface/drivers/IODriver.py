@@ -24,6 +24,8 @@ class IODriver(Driver):
         numSent (int): The number of messages sent to the queue.
         numReceived (int): The number of messages received from the queue.
         mq (:class:`sysv_ipc.MessageQueue`): Message queue.
+        name_env (str): Name of environment variable where the queue key will
+            be stored.
 
     """
     def __init__(self, name, suffix="", **kwargs):
@@ -33,7 +35,12 @@ class IODriver(Driver):
         self.numSent = 0
         self.numReceived = 0
         self.mq = tools.get_queue()
-        self.env[name + suffix] = str(self.mq.key)
+        self.name_env = self.name
+        if self.copy_suffix:
+            assert(self.copy_suffix in self.name_env)
+            self.name_env = self.name_env.split(self.copy_suffix)[0]
+        self.name_env += suffix
+        self.env[self.name_env] = str(self.mq.key)
         self.debug(".env: %s", self.env)
 
     @property

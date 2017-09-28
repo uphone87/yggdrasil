@@ -1,0 +1,23 @@
+---
+
+model:
+  name: helloPar_python
+  driver: PythonModelDriver
+  args: ./src/helloPar.py  # Runs the python script using default python
+  copies: 2
+
+  inputs:
+    - name: inFile
+      driver: FileInputDriver
+      args: ./Input/input.txt
+    - name: helloParQueueIn    
+      driver: RMQInputDriver
+      args: helloParQueue
+
+  outputs:
+    - name: helloParQueueOut    
+      driver: RMQOutputDriver
+      args: helloParQueue
+    - name: outFile
+      driver: FileOutputDriver
+      args: /tmp/output_helloPar.txt

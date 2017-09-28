@@ -1,0 +1,23 @@
+---
+
+model:
+  name: helloPar_matlab
+  driver: MatlabModelDriver
+  args: ./src/helloPar.m  # Runs the matlab script using Matlab engine
+  copies: 2
+
+  inputs:
+    - name: inFile
+      driver: FileInputDriver
+      args: ./Input/input.txt
+    - name: helloParQueueIn    
+      driver: RMQInputDriver
+      args: helloParQueue
+
+  outputs:
+    - name: helloParQueueOut    
+      driver: RMQOutputDriver
+      args: helloParQueue
+    - name: outFile
+      driver: FileOutputDriver
+      args: /tmp/output_helloPar.txt
