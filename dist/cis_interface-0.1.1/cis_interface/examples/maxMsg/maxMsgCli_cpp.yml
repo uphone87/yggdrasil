@@ -1,7 +1,0 @@
----
-
-model:
-  name: maxMsgCli
-  driver: GCCModelDriver
-  args: ./src/maxMsgCli.cpp
-  client_of: maxMsgSrv

@@ -1,7 +1,0 @@
----
-
-model:
-  name: maxMsgSrv
-  driver: GCCModelDriver
-  args: ./src/maxMsgSrv.c
-  is_server: True
