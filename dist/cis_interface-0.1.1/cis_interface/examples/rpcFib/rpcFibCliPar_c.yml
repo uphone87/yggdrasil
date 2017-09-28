@@ -1,9 +1,0 @@
----
-
-model:
-  name: rpcFibCliPar
-  driver: GCCModelDriver
-  args:
-    - ./src/rpcFibCliPar.c
-    - "{{ FIB_ITERATIONS }}"   # env_var for number of loops
-  client_of: rpcFibSrv  # Creates an RPC client queue $(client_of)_$(name)
