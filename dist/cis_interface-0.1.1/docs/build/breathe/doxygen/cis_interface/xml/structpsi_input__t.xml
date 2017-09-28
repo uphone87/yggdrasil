@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpsi_input__t" kind="struct" language="C++" prot="public">
+    <compoundname>psiInput_t</compoundname>
+    <includes refid="_psi_interface_8h" local="no">PsiInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsi_input__t_1a21f6897a7e84d4e62099293203c08225" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiInput_t::_handle</definition>
+        <argsstring></argsstring>
+        <name>_handle</name>
+        <briefdescription>
+<para>Queue handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="222" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_input__t_1af043731e8bd403a4b6daa6d2dfc0bfbb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* psiInput_t::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Queue name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="223" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_input__t_1a4b30391a07118d0fc50315750a04f3fc" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* psiInput_t::_fmt</definition>
+        <argsstring></argsstring>
+        <name>_fmt</name>
+        <briefdescription>
+<para>Format for interpreting queue messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="224" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_input__t_1a9496391ef31330ad5ea299c578f60be1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiInput_t::_nfmt</definition>
+        <argsstring></argsstring>
+        <name>_nfmt</name>
+        <briefdescription>
+<para>Number of fields expected from format string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="225" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Input queue structure. Contains information on an input queue. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="221" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="221" bodyend="226"/>
+    <listofallmembers>
+      <member refid="structpsi_input__t_1a4b30391a07118d0fc50315750a04f3fc" prot="public" virt="non-virtual"><scope>psiInput_t</scope><name>_fmt</name></member>
+      <member refid="structpsi_input__t_1a21f6897a7e84d4e62099293203c08225" prot="public" virt="non-virtual"><scope>psiInput_t</scope><name>_handle</name></member>
+      <member refid="structpsi_input__t_1af043731e8bd403a4b6daa6d2dfc0bfbb" prot="public" virt="non-virtual"><scope>psiInput_t</scope><name>_name</name></member>
+      <member refid="structpsi_input__t_1a9496391ef31330ad5ea299c578f60be1" prot="public" virt="non-virtual"><scope>psiInput_t</scope><name>_nfmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

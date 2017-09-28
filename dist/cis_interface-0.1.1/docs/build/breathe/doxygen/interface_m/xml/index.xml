@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="_psi_interface_8m" kind="file"><name>PsiInterface.m</name>
+    <member refid="_psi_interface_8m_1ac20f542425d23d5b71774e61a30c7884" kind="variable"><name>pyobj</name></member>
+  </compound>
+  <compound refid="dir_a862424b14b5e0bd4b5f46d76b9d9fcd" kind="dir"><name>/home/ubuntu/langmm/cis_iterface/cis_interface</name>
+  </compound>
+  <compound refid="dir_e47a34020f69a6cf0aa9a10e0fa7d928" kind="dir"><name>/home/ubuntu/langmm/cis_iterface/cis_interface/interface</name>
+  </compound>
+</doxygenindex>

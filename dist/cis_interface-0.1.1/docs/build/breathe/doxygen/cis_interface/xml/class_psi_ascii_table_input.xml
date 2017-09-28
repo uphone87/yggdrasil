@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_ascii_table_input" kind="class" language="C++" prot="public">
+    <compoundname>PsiAsciiTableInput</compoundname>
+    <includes refid="_psi_interface_8hpp" local="no">PsiInterface.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_psi_ascii_table_input_1addffcef0af2986246201c366c4f5942c" prot="private" static="no" mutable="no">
+        <type><ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref></type>
+        <definition>psiAsciiTableInput_t PsiAsciiTableInput::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="459" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a75626a21362193ab71e53b0e395f8d4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiTableInput::PsiAsciiTableInput</definition>
+        <argsstring>(const char *name, int src_type=1)</argsstring>
+        <name>PsiAsciiTableInput</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_type</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_psi_ascii_table_input" kindref="compound">PsiAsciiTableInput</ref>. Due to issues with the C++ version of vsscanf, flags and precision indicators for floating point format specifiers (e.g. e, f), must be removed so that table input can be properly parsed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to path of local table or name of an input queue. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int 0 if name refers to a local table, 1 if it is a queue. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="472" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="472" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1abad6b196dddb862f33c760516aa673f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiTableInput::~PsiAsciiTableInput</definition>
+        <argsstring>()</argsstring>
+        <name>~PsiAsciiTableInput</name>
+        <briefdescription>
+<para>Destructor for <ref refid="class_psi_ascii_table_input" kindref="compound">PsiAsciiTableInput</ref>. See cleanup_pati in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="485" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="485" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1ade41e5aa0af9200b81fec07c1512e6a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv</definition>
+        <argsstring>(char **data, int len)</argsstring>
+        <name>recv</name>
+        <param>
+          <type>char **</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Recv a nolimit message from a table input queue. See at_psi_recv in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>character pointer to pointer to memory where received message should be stored. It does not need to be allocated, only defined. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int length of allocated buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int -1 if message could not be received. Length of the received message if message was received. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="496" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="496" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a36ba3bb0a5fe6c98493bcc2bb8cc981d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv_row</definition>
+        <argsstring>(int nargs,...)</argsstring>
+        <name>recv_row</name>
+        <param>
+          <type>int</type>
+          <declname>nargs</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Recv and parse a row from the table file/queue. See at_recv_row in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nargs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Number of arguments being passed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to memory where variables from the parsed row should be stored. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int -1 if message could not be received or parsed, otherwise the length of the received is returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="507" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="507" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_table_input_1a6485b575238765c26434319307e27f6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiTableInput::recv_array</definition>
+        <argsstring>(int nargs,...)</argsstring>
+        <name>recv_array</name>
+        <param>
+          <type>int</type>
+          <declname>nargs</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Recv and parse columns from a table file/queue. See at_recv_array in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nargs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Number of arguments being passed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to pointers to memory where columns from the parsed table should be stored. They need not be allocated, only declared. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of rows received. Negative values indicate errors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="534" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="534" bodyend="551"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>C++ interface to <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_psi_ascii_table_input" kindref="compound">PsiAsciiTableInput</ref> class is a basic wrapper around the C <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> structure and associated functions from the <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> header. It provides the user with C++ style access to basic ASCII table input operations. </para>    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="458" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="458" bodyend="553"/>
+    <listofallmembers>
+      <member refid="class_psi_ascii_table_input_1addffcef0af2986246201c366c4f5942c" prot="private" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>_pi</name></member>
+      <member refid="class_psi_ascii_table_input_1a75626a21362193ab71e53b0e395f8d4c" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>PsiAsciiTableInput</name></member>
+      <member refid="class_psi_ascii_table_input_1ade41e5aa0af9200b81fec07c1512e6a2" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv</name></member>
+      <member refid="class_psi_ascii_table_input_1a6485b575238765c26434319307e27f6c" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv_array</name></member>
+      <member refid="class_psi_ascii_table_input_1a36ba3bb0a5fe6c98493bcc2bb8cc981d" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>recv_row</name></member>
+      <member refid="class_psi_ascii_table_input_1abad6b196dddb862f33c760516aa673f0" prot="public" virt="non-virtual"><scope>PsiAsciiTableInput</scope><name>~PsiAsciiTableInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

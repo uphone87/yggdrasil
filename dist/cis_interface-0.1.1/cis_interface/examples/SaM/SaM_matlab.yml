@@ -1,0 +1,20 @@
+
+---
+
+model:
+  name: MatlabSaM
+  driver: MatlabModelDriver
+  args: src/SaM.m
+
+  inputs:
+    - name: input1_matlab
+      driver: FileInputDriver
+      args: ./Input/SaM_input.txt
+    - name: static_matlab
+      driver: FileInputDriver
+      args: ./Input/SaM_static.txt
+
+  outputs:
+    - name: output_matlab
+      driver: FileOutputDriver
+      args: /tmp/SaM_output.txt

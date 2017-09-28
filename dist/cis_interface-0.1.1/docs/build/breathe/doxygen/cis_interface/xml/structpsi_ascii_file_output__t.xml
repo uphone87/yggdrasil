@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpsi_ascii_file_output__t" kind="struct" language="C++" prot="public">
+    <compoundname>psiAsciiFileOutput_t</compoundname>
+    <includes refid="_psi_interface_8h" local="no">PsiInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsi_ascii_file_output__t_1ac51edcdaa6634876c15272f23378396d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiFileOutput_t::_valid</definition>
+        <argsstring></argsstring>
+        <name>_valid</name>
+        <briefdescription>
+<para>Indicates if the structure was succesfully initialized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1065" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_output__t_1a01a4cb8af6e9d321b323224b37b598f8" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* psiAsciiFileOutput_t::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Path to local file or name of output channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1066" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1066" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_output__t_1a58ecf3b6fcd296419931dc920d139d72" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiFileOutput_t::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>0 for local file, 1 for output channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1067" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_output__t_1aa3182952200aa71ebab66d18e2c7a32a" prot="public" static="no" mutable="no">
+        <type><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+        <definition>asciiFile_t psiAsciiFileOutput_t::_file</definition>
+        <argsstring></argsstring>
+        <name>_file</name>
+        <briefdescription>
+<para>Associated output handler for local files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1068" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_file_output__t_1a3253fef4940536b8fc4260bad6418cdd" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsi_output__t" kindref="compound">psiOutput_t</ref></type>
+        <definition>psiOutput_t psiAsciiFileOutput_t::_psi</definition>
+        <argsstring></argsstring>
+        <name>_psi</name>
+        <briefdescription>
+<para>Associated output handler for output channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1069" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure of information for output to a file line by line. </para>    </briefdescription>
+    <detaileddescription>
+<para>File IO</para><para>Handle I/O from/to a local or remote file line by line.</para><para>Input Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file. <ref refid="structpsi_ascii_file_input__t" kindref="compound">psiAsciiFileInput_t</ref> fin = psiAsciiFileInput(&quot;file_channel&quot;, 1); // channel <ref refid="structpsi_ascii_file_input__t" kindref="compound">psiAsciiFileInput_t</ref> fin = psiAsciiFileInput(&quot;/local/file.txt&quot;, 0); // local file</para></listitem><listitem><para>Prepare: Allocate space for lines. char line[PSI_MSG_MAX];</para></listitem><listitem><para>Receive each line, terminating when receive returns -1 (EOF or channel closed). int ret = 1; while (ret &gt; 0) { ret = af_recv_line(fin, line, PSI_MSG_MAX); Do something with the line }</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pafi(&amp;fin);</para></listitem></orderedlist>
+</para><para>Output Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file. <ref refid="structpsi_ascii_file_output__t" kindref="compound">psiAsciiFileOutput_t</ref> fout = psiAsciiFileOutput(&quot;file_channel&quot;, 1); // channel <ref refid="structpsi_ascii_file_output__t" kindref="compound">psiAsciiFileOutput_t</ref> fout = psiAsciiFileOutput(&quot;/local/file.txt&quot;, 0); // local file</para></listitem><listitem><para>Send lines to the file. If return value is not 0, the send was not succesfull. int ret; ret = af_send_line(fout, &quot;Line 1\n&quot;); ret = af_send_line(fout, &quot;Line 2\n&quot;);</para></listitem><listitem><para>Send EOF message when done to close the file. ret = af_send_eof(fout);</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pafo(&amp;fout); </para></listitem></orderedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>asciiFile_t</label>
+        <link refid="structascii_file__t"/>
+      </node>
+      <node id="16">
+        <label>psiAsciiFileOutput_t</label>
+        <link refid="structpsi_ascii_file_output__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>_psi</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>_file</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>psiOutput_t</label>
+        <link refid="structpsi_output__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1064" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1064" bodyend="1070"/>
+    <listofallmembers>
+      <member refid="structpsi_ascii_file_output__t_1aa3182952200aa71ebab66d18e2c7a32a" prot="public" virt="non-virtual"><scope>psiAsciiFileOutput_t</scope><name>_file</name></member>
+      <member refid="structpsi_ascii_file_output__t_1a01a4cb8af6e9d321b323224b37b598f8" prot="public" virt="non-virtual"><scope>psiAsciiFileOutput_t</scope><name>_name</name></member>
+      <member refid="structpsi_ascii_file_output__t_1a3253fef4940536b8fc4260bad6418cdd" prot="public" virt="non-virtual"><scope>psiAsciiFileOutput_t</scope><name>_psi</name></member>
+      <member refid="structpsi_ascii_file_output__t_1a58ecf3b6fcd296419931dc920d139d72" prot="public" virt="non-virtual"><scope>psiAsciiFileOutput_t</scope><name>_type</name></member>
+      <member refid="structpsi_ascii_file_output__t_1ac51edcdaa6634876c15272f23378396d" prot="public" virt="non-virtual"><scope>psiAsciiFileOutput_t</scope><name>_valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

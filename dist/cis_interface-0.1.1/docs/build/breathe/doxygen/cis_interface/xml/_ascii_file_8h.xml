@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_ascii_file_8h" kind="file" language="C++">
+    <compoundname>AsciiFile.h</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includedby refid="_psi_interface_8h" local="no">/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h</includedby>
+    <includedby refid="_ascii_table_8h" local="yes">/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>string.h</label>
+      </node>
+      <node id="0">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h</label>
+        <link refid="_ascii_file_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h</label>
+        <link refid="_ascii_table_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp</label>
+        <link refid="_psi_interface_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h</label>
+        <link refid="_ascii_file_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h</label>
+        <link refid="_psi_interface_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structascii_file__t" prot="public">asciiFile_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_ascii_file_8h_1a26d9d29d1d43b31cc617396448c13c0b" prot="public" static="no">
+        <name>ASCIIFILE_INCLUDED</name>
+        <briefdescription>
+<para>Flag for checking if <ref refid="_ascii_file_8h_source" kindref="compound">AsciiFile.h</ref> has already been included. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="7" column="9" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_ascii_file_8h_1ac68bae2984ae6cc400d0e6ca823dd28b" prot="public" static="no">
+        <name>LINE_SIZE_MAX</name>
+        <initializer>1024*2</initializer>
+        <briefdescription>
+<para>Maximum line size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="10" column="9" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_ascii_file_8h_1a731c3c1bfd9021ff410ee8398db8c8a4" prot="public" static="no">
+        <type>struct <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+        <definition>typedef struct asciiFile_t  asciiFile_t</definition>
+        <argsstring></argsstring>
+        <name>asciiFile_t</name>
+        <briefdescription>
+<para>Structure containing information about an ASCII text file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="19" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_ascii_file_8h_1a47a6fed432d1842f8da133abcc44a88c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_is_open</definition>
+        <argsstring>(const asciiFile_t t)</argsstring>
+        <name>af_is_open</name>
+        <param>
+          <type>const <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Determine if the file is open. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 1 if open, 0 if closed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="27" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1a4c6f40e8e6773279180c65e89cede010" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_open</definition>
+        <argsstring>(asciiFile_t *t)</argsstring>
+        <name>af_open</name>
+        <param>
+          <type><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Open the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 if opened successfully, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="40" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1a0527ea4a37b370f03fe6da956ff82051" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_close</definition>
+        <argsstring>(asciiFile_t *t)</argsstring>
+        <name>af_close</name>
+        <param>
+          <type><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Close the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 if closed successfully, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="58" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="58" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1a2563193ae51f894e0c1c66c465b001c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_is_comment</definition>
+        <argsstring>(const asciiFile_t t, const char *line)</argsstring>
+        <name>af_is_comment</name>
+        <param>
+          <type>const <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Check if string starts with a comment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string that should be checked. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 1 if line starts with a comment, 0 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="77" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1abe2de982da7e4bc735994b9b8c1925b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_readline_full</definition>
+        <argsstring>(const asciiFile_t t, char **line, size_t *n)</argsstring>
+        <name>af_readline_full</name>
+        <param>
+          <type>const <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Read a single line from the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to pointer to buffer where the read line should be stored. If line is not large enough to hold the read line, it will be reallocated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to size of allocated buffer. If line is not large enough to hold the read line and is reallocated, n will be changed to the new size. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters read, -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="95" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1ae1b11621aad35b3a39ebb6f36385cf94" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int af_writeline_full</definition>
+        <argsstring>(const asciiFile_t t, const char *line)</argsstring>
+        <name>af_writeline_full</name>
+        <param>
+          <type>const <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Write a single line to the file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> file structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to string that should be written. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int On success, the number of characters written, -1 on failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="109" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="_ascii_file_8h_1a90670937615370b08cd7dfafad8fbbba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref></type>
+        <definition>static asciiFile_t asciiFile</definition>
+        <argsstring>(const char *filepath, const char *io_mode, const char *comment, const char *newline)</argsstring>
+        <name>asciiFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>io_mode</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>comment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>newline</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to file path. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">io_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to I/O mode. &quot;r&quot; for read, &quot;w&quot; for write. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to character(s) that should indicate a comment. If NULL, comment is set to &quot;# &quot;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const character pointer to character(s) that should indicate a newline. If NULL, newline is set to &quot;\n&quot;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref> File structure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" line="127" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h" bodystart="127" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#define<sp/>ASCIIFILE_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#define<sp/>LINE_SIZE_MAX<sp/>1024*2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structascii_file__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="structascii_file__t_1a9141b66096494327a32fa51c6b8281cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_file__t_1a9141b66096494327a32fa51c6b8281cc" kindref="member">filepath</ref>;<sp/></highlight></codeline>
+<codeline lineno="15" refid="structascii_file__t_1a89b8b86d814353fea003c9c54204d8af" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t_1a89b8b86d814353fea003c9c54204d8af" kindref="member">io_mode</ref>[64];<sp/></highlight></codeline>
+<codeline lineno="16" refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>[64];<sp/></highlight></codeline>
+<codeline lineno="17" refid="structascii_file__t_1aa98795a5f431ada3d3548bc9b29c936f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t_1aa98795a5f431ada3d3548bc9b29c936f" kindref="member">newline</ref>[64];<sp/></highlight></codeline>
+<codeline lineno="18" refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" refkind="member"><highlight class="normal"><sp/><sp/>FILE<sp/>*<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref>;<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_is_open(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_open(<ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_open(*t)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>(*t).fd<sp/>=<sp/>fopen((*t).filepath,<sp/>(*t).io_mode);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*t).fd<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_close(<ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>*t)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_open(*t)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose((*t).fd);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>(*t).fd<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_is_comment(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strncmp(line,<sp/>t.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>,<sp/>strlen(t.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>))<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_readline_full(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>t,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**line,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*n)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_open(t)<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getline(line,<sp/>n,<sp/>t.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>af_writeline_full(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*line)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(af_is_open(t)<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fwrite(line,<sp/>1,<sp/>strlen(line),<sp/>t.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>asciiFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_file__t_1a9141b66096494327a32fa51c6b8281cc" kindref="member">filepath</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_file__t_1a89b8b86d814353fea003c9c54204d8af" kindref="member">io_mode</ref>,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structascii_file__t_1aa98795a5f431ada3d3548bc9b29c936f" kindref="member">newline</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="structascii_file__t" kindref="compound">asciiFile_t</ref><sp/>t;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_file__t_1a799e768ea6b00c3cdf49303950b015b6" kindref="member">fd</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>t.<ref refid="structascii_file__t_1a9141b66096494327a32fa51c6b8281cc" kindref="member">filepath</ref><sp/>=<sp/><ref refid="structascii_file__t_1a9141b66096494327a32fa51c6b8281cc" kindref="member">filepath</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>strcpy(t.<ref refid="structascii_file__t_1a89b8b86d814353fea003c9c54204d8af" kindref="member">io_mode</ref>,<sp/><ref refid="structascii_file__t_1a89b8b86d814353fea003c9c54204d8af" kindref="member">io_mode</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>defaults<sp/>for<sp/>optional<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>,<sp/></highlight><highlight class="stringliteral">&quot;#<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>,<sp/><ref refid="structascii_file__t_1aa6b01ebf820bd2c7bc7003e7b0669092" kindref="member">comment</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newline<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_file__t_1aa98795a5f431ada3d3548bc9b29c936f" kindref="member">newline</ref>,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(t.<ref refid="structascii_file__t_1aa98795a5f431ada3d3548bc9b29c936f" kindref="member">newline</ref>,<sp/>newline);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiFile.h"/>
+  </compounddef>
+</doxygen>

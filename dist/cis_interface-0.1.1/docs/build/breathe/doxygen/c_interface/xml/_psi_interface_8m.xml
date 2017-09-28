@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_psi_interface_8m" kind="file" language="Objective-C">
+    <compoundname>PsiInterface.m</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_psi_interface_8m_1ac20f542425d23d5b71774e61a30c7884" prot="public" static="no" mutable="no">
+        <type>function</type>
+        <definition>pyobj</definition>
+        <argsstring></argsstring>
+        <name>pyobj</name>
+        <initializer>= PsiInterface(type, varargin)
+  PsiInterface = py.importlib.import_module(&apos;cis_interface.interface.PsiInterface&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.m" line="2" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.m" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>pyobj<sp/>=<sp/>PsiInterface(type,<sp/>varargin)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/>PsiInterface<sp/>=<sp/>py.importlib.import_module(</highlight><highlight class="stringliteral">&apos;cis_interface.interface.PsiInterface&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/>pyobj<sp/>=<sp/>PsiInterface.PsiMatlab(type,<sp/>py.list(varargin));</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">end</highlight></codeline>
+    </programlisting>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.m"/>
+  </compounddef>
+</doxygen>

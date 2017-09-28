@@ -1,0 +1,10 @@
+---
+
+model:
+  name: rpcFibCliPar
+  driver: MatlabModelDriver
+  args:
+    - ./src/rpcFibCliPar.m
+    - "{{ FIB_ITERATIONS }}"
+  client_of: rpcFibSrv  # Creates an RPC client queue $(client_of)_$(name)
+ 

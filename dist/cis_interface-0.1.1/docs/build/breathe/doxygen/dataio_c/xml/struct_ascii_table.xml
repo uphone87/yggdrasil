@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_ascii_table" kind="struct" language="C++" prot="public">
+    <compoundname>AsciiTable</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_ascii_table_1a6b71c65c319ebb789ff5a2a912b35d0c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_ascii_file" kindref="compound">AsciiFile</ref></type>
+        <definition>AsciiFile AsciiTable::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="12" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a02c0c95bda1032efb7d36ed046a81161" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AsciiTable::format_str[LINE_SIZE_MAX]</definition>
+        <argsstring>[LINE_SIZE_MAX]</argsstring>
+        <name>format_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="13" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a9d1eb5cae7de5f8086e13e77ab677cfd" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AsciiTable::column[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>column</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="14" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a8fb623eb767592c944c925e4fdf39630" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AsciiTable::ncols</definition>
+        <argsstring></argsstring>
+        <name>ncols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="15" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a2071d95515e2c0f1d6d3df70d37f1905" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* AsciiTable::format_typ</definition>
+        <argsstring></argsstring>
+        <name>format_typ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="16" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a697bf776cdb1d3d98197b0c8a574d8af" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* AsciiTable::format_siz</definition>
+        <argsstring></argsstring>
+        <name>format_siz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="17" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a0182498c6504b0b60b7a803409b330e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AsciiTable::row_siz</definition>
+        <argsstring></argsstring>
+        <name>row_siz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="18" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_ascii_table_1a782403a4fbf29b3b6dceabec0282c83d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AsciiTable::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="19" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>AsciiFile</label>
+        <link refid="struct_ascii_file"/>
+      </node>
+      <node id="3">
+        <label>AsciiTable</label>
+        <link refid="struct_ascii_table"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" line="11" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/dataio/AsciiTable.h" bodystart="11" bodyend="20"/>
+    <listofallmembers>
+      <member refid="struct_ascii_table_1a9d1eb5cae7de5f8086e13e77ab677cfd" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>column</name></member>
+      <member refid="struct_ascii_table_1a6b71c65c319ebb789ff5a2a912b35d0c" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>f</name></member>
+      <member refid="struct_ascii_table_1a697bf776cdb1d3d98197b0c8a574d8af" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>format_siz</name></member>
+      <member refid="struct_ascii_table_1a02c0c95bda1032efb7d36ed046a81161" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>format_str</name></member>
+      <member refid="struct_ascii_table_1a2071d95515e2c0f1d6d3df70d37f1905" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>format_typ</name></member>
+      <member refid="struct_ascii_table_1a8fb623eb767592c944c925e4fdf39630" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>ncols</name></member>
+      <member refid="struct_ascii_table_1a0182498c6504b0b60b7a803409b330e6" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>row_siz</name></member>
+      <member refid="struct_ascii_table_1a782403a4fbf29b3b6dceabec0282c83d" prot="public" virt="non-virtual"><scope>AsciiTable</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

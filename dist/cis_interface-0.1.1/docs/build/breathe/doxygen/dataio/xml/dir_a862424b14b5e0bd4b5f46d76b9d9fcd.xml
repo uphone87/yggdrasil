@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a862424b14b5e0bd4b5f46d76b9d9fcd" kind="dir">
+    <compoundname>/home/ubuntu/langmm/cis_iterface/cis_interface</compoundname>
+    <innerdir refid="dir_e2e96a12fc04fec5957fa0cee9f792b8">/home/ubuntu/langmm/cis_iterface/cis_interface/dataio</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/"/>
+  </compounddef>
+</doxygen>

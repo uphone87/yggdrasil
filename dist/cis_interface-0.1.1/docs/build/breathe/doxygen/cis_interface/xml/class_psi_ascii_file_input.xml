@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_ascii_file_input" kind="class" language="C++" prot="public">
+    <compoundname>PsiAsciiFileInput</compoundname>
+    <includes refid="_psi_interface_8hpp" local="no">PsiInterface.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_psi_ascii_file_input_1a067c0e3f3b48abafd93e2143442424a7" prot="private" static="no" mutable="no">
+        <type><ref refid="structpsi_ascii_file_input__t" kindref="compound">psiAsciiFileInput_t</ref></type>
+        <definition>psiAsciiFileInput_t PsiAsciiFileInput::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="316" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_ascii_file_input_1aaf0db20856965c11699fc8d3f22562bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiFileInput::PsiAsciiFileInput</definition>
+        <argsstring>(const char *name, int src_type=1)</argsstring>
+        <name>PsiAsciiFileInput</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_type</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_psi_ascii_file_input" kindref="compound">PsiAsciiFileInput</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>constant character pointer to path of local file or name of an input queue. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int 0 if name refers to a local file, 1 if it is a queue. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="326" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="326" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_file_input_1a9e4b866a3986c47ca87309380f8c9c9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiFileInput::~PsiAsciiFileInput</definition>
+        <argsstring>()</argsstring>
+        <name>~PsiAsciiFileInput</name>
+        <briefdescription>
+<para>Destructor for <ref refid="class_psi_ascii_file_input" kindref="compound">PsiAsciiFileInput</ref>. See cleanup_pafi in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="332" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="332" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_file_input_1a75d19d237c5166654bea8360ac4a4056" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiFileInput::recv_line</definition>
+        <argsstring>(char *line, size_t n)</argsstring>
+        <name>recv_line</name>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Receive a single line from an associated file or queue. See af_recv_line in <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> for details. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>character pointer to allocate memory where the received line should be stored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size_t Size of the allocated memory block in bytes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Number of bytes read/received. Negative values indicate that there was either an error or the EOF message was received. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="343" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="343" bodyend="343"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>C++ interface to <ref refid="structpsi_ascii_file_input__t" kindref="compound">psiAsciiFileInput_t</ref> functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_psi_ascii_file_input" kindref="compound">PsiAsciiFileInput</ref> class is a basic wrapper around the C <ref refid="structpsi_ascii_file_input__t" kindref="compound">psiAsciiFileInput_t</ref> structure and associated functions from the <ref refid="_psi_interface_8h_source" kindref="compound">PsiInterface.h</ref> header. It provides the user with C++ style access to basic ASCII file input operations. </para>    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="315" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="315" bodyend="345"/>
+    <listofallmembers>
+      <member refid="class_psi_ascii_file_input_1a067c0e3f3b48abafd93e2143442424a7" prot="private" virt="non-virtual"><scope>PsiAsciiFileInput</scope><name>_pi</name></member>
+      <member refid="class_psi_ascii_file_input_1aaf0db20856965c11699fc8d3f22562bc" prot="public" virt="non-virtual"><scope>PsiAsciiFileInput</scope><name>PsiAsciiFileInput</name></member>
+      <member refid="class_psi_ascii_file_input_1a75d19d237c5166654bea8360ac4a4056" prot="public" virt="non-virtual"><scope>PsiAsciiFileInput</scope><name>recv_line</name></member>
+      <member refid="class_psi_ascii_file_input_1a9e4b866a3986c47ca87309380f8c9c9c" prot="public" virt="non-virtual"><scope>PsiAsciiFileInput</scope><name>~PsiAsciiFileInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

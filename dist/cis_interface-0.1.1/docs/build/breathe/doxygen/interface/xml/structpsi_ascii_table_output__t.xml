@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structpsi_ascii_table_output__t" kind="struct" language="C++" prot="public">
+    <compoundname>psiAsciiTableOutput_t</compoundname>
+    <includes refid="_psi_interface_8h" local="no">PsiInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpsi_ascii_table_output__t_1a787f59c8e7319c437d7458d6470654c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiTableOutput_t::_valid</definition>
+        <argsstring></argsstring>
+        <name>_valid</name>
+        <briefdescription>
+<para>Success or failure of initializing the structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1303" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_table_output__t_1aaccb8efb45387db8b563062beca99825" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* psiAsciiTableOutput_t::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>Path to local table or name of message queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1304" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_table_output__t_1a2faf1afb6a1d4410a902d2c2074a8ea9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int psiAsciiTableOutput_t::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>0 if <ref refid="structpsi_ascii_table_output__t_1aaccb8efb45387db8b563062beca99825" kindref="member">_name</ref> is a local table, 1 if it is a message queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1305" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_table_output__t_1a48b160ca303b3a7a850d6b093e1d55f8" prot="public" static="no" mutable="no">
+        <type>AsciiTable</type>
+        <definition>AsciiTable psiAsciiTableOutput_t::_table</definition>
+        <argsstring></argsstring>
+        <name>_table</name>
+        <briefdescription>
+<para>Associated output handler for local tables. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1306" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpsi_ascii_table_output__t_1a6d499326c0db9a9d50e55dd5c0147141" prot="public" static="no" mutable="no">
+        <type><ref refid="structpsi_output__t" kindref="compound">psiOutput_t</ref></type>
+        <definition>psiOutput_t psiAsciiTableOutput_t::_psi</definition>
+        <argsstring></argsstring>
+        <name>_psi</name>
+        <briefdescription>
+<para>Associated output handler for queues. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1307" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for handling output to an ASCII table. </para>    </briefdescription>
+    <detaileddescription>
+<para>Table IO</para><para>Handle I/O from/to a local or remote ASCII table either line-by-line or as an array.</para><para><heading level="1">Row-by-Row </heading>
+</para><para>Input by Row Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file. <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> fin = psiAsciiTableInput(&quot;file_channel&quot;, 1); // channel <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> fin = psiAsciiTableInput(&quot;/local/file.txt&quot;, 0); // local table</para></listitem><listitem><para>Prepare: Allocate space for variables in row (the format in this example is &quot;%5s %d %f\n&quot; like the output example below). char a[5]; int b; double c;</para></listitem><listitem><para>Receive each row, terminating when receive returns -1 (EOF or channel closed). int ret = 1; while (ret &gt; 0) { ret = at_recv_row(fin, &amp;a, &amp;b, &amp;c); Do something with the row }</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pati(&amp;fin);</para></listitem></orderedlist>
+</para><para>Output by Row Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file and a format string for rows. <ref refid="structpsi_ascii_table_output__t" kindref="compound">psiAsciiTableOutput_t</ref> fout = psiAsciiTableOutput(&quot;file_channel&quot;, // channel &quot;%5s %d %f\n&quot;, 1); <ref refid="structpsi_ascii_table_output__t" kindref="compound">psiAsciiTableOutput_t</ref> fout = psiAsciiTableOutput(&quot;/local/file.txt&quot;, // local table &quot;%5s %d %f\n&quot;, 0);</para></listitem><listitem><para>Send rows to the file by providing entries. Formatting is handled by the interface. If return value is not 0, the send was not succesful. int ret; ret = at_send_row(fout, &quot;one&quot;, 1, 1.0); ret = at_send_row(fout, &quot;two&quot;, 2, 2.0);</para></listitem><listitem><para>Send EOF message when done to close the file. ret = at_send_eof(fout);</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pato(&amp;fout);</para></listitem></orderedlist>
+</para><para><heading level="1">Array </heading>
+</para><para>Input by Array Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file. <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> fin = psiAsciiTableInput(&quot;file_channel&quot;, 1); // channel <ref refid="structpsi_ascii_table_input__t" kindref="compound">psiAsciiTableInput_t</ref> fin = psiAsciiTableInput(&quot;/local/file.txt&quot;, 0); // local table</para></listitem><listitem><para>Prepare: Declare pointers for table columns (they will be allocated by the interface once the number of rows is known). char *aCol; int *bCol; double *cCol;</para></listitem><listitem><para>Receive entire table as columns. Return value will be the number of elements in each column (the number of table rows). Negative values indicate errors. int ret = at_recv_array(fin, &amp;a, &amp;b, &amp;c);</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pati(&amp;fin);</para></listitem></orderedlist>
+</para><para>Output by Array Usage:<orderedlist>
+<listitem><para>One-time: Create file interface by providing either a channel name or a path to a local file and a format string for rows. <ref refid="structpsi_ascii_table_output__t" kindref="compound">psiAsciiTableOutput_t</ref> fout = psiAsciiTableOutput(&quot;file_channel&quot;, // channel &quot;%5s %d %f\n&quot;, 1); <ref refid="structpsi_ascii_table_output__t" kindref="compound">psiAsciiTableOutput_t</ref> fout = psiAsciiTableOutput(&quot;/local/file.txt&quot;, // local table &quot;%5s %d %f\n&quot;, 0);</para></listitem><listitem><para>Send columns to the file by providing pointers (or arrays). Formatting is handled by the interface. If return value is not 0, the send was not succesful. char aCol[] = {&quot;one  &quot;, &quot;two  &quot;, &quot;three&quot;}; \ Each str is of len 5 int bCol[3] = {1, 2, 3}; float cCol[3] = {1.0, 2.0, 3.0}; int ret = at_send_array(fout, a, b, c);</para></listitem><listitem><para>Cleanup. Call functions to deallocate structures and close files. cleanup_pato(&amp;fout); </para></listitem></orderedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="28">
+        <label>psiAsciiTableOutput_t</label>
+        <link refid="structpsi_ascii_table_output__t"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>_psi</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>psiOutput_t</label>
+        <link refid="structpsi_output__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" line="1302" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.h" bodystart="1302" bodyend="1308"/>
+    <listofallmembers>
+      <member refid="structpsi_ascii_table_output__t_1aaccb8efb45387db8b563062beca99825" prot="public" virt="non-virtual"><scope>psiAsciiTableOutput_t</scope><name>_name</name></member>
+      <member refid="structpsi_ascii_table_output__t_1a6d499326c0db9a9d50e55dd5c0147141" prot="public" virt="non-virtual"><scope>psiAsciiTableOutput_t</scope><name>_psi</name></member>
+      <member refid="structpsi_ascii_table_output__t_1a48b160ca303b3a7a850d6b093e1d55f8" prot="public" virt="non-virtual"><scope>psiAsciiTableOutput_t</scope><name>_table</name></member>
+      <member refid="structpsi_ascii_table_output__t_1a2faf1afb6a1d4410a902d2c2074a8ea9" prot="public" virt="non-virtual"><scope>psiAsciiTableOutput_t</scope><name>_type</name></member>
+      <member refid="structpsi_ascii_table_output__t_1a787f59c8e7319c437d7458d6470654c6" prot="public" virt="non-virtual"><scope>psiAsciiTableOutput_t</scope><name>_valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

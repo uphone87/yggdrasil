@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_psi_ascii_file_output" kind="class" language="C++" prot="public">
+    <compoundname>PsiAsciiFileOutput</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_psi_ascii_file_output_1a8ed8ca9e591c7db9f42299471ed43978" prot="public" static="no" mutable="no">
+        <type>psiAsciiFileOutput_t</type>
+        <definition>psiAsciiFileOutput_t PsiAsciiFileOutput::_pi</definition>
+        <argsstring></argsstring>
+        <name>_pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="102" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_psi_ascii_file_output_1a08f5ec347f018509dcdd6b7405e15e36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiFileOutput::PsiAsciiFileOutput</definition>
+        <argsstring>(const char *name, int dst_type=1)</argsstring>
+        <name>PsiAsciiFileOutput</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_type</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="104" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="104" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_file_output_1a616fa02af7a51f36d62e2aa109035072" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PsiAsciiFileOutput::~PsiAsciiFileOutput</definition>
+        <argsstring>()</argsstring>
+        <name>~PsiAsciiFileOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="106" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_file_output_1a9173658e711537902ea50bf8c3b5b292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiFileOutput::send_eof</definition>
+        <argsstring>()</argsstring>
+        <name>send_eof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="108" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_psi_ascii_file_output_1ad90b9b03bdf05f14be85fe0735df60a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PsiAsciiFileOutput::send_line</definition>
+        <argsstring>(char *line)</argsstring>
+        <name>send_line</name>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="109" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="109" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" line="100" column="1" bodyfile="/home/ubuntu/langmm/cis_iterface/cis_interface/interface/PsiInterface.hpp" bodystart="100" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_psi_ascii_file_output_1a8ed8ca9e591c7db9f42299471ed43978" prot="public" virt="non-virtual"><scope>PsiAsciiFileOutput</scope><name>_pi</name></member>
+      <member refid="class_psi_ascii_file_output_1a08f5ec347f018509dcdd6b7405e15e36" prot="public" virt="non-virtual"><scope>PsiAsciiFileOutput</scope><name>PsiAsciiFileOutput</name></member>
+      <member refid="class_psi_ascii_file_output_1a9173658e711537902ea50bf8c3b5b292" prot="public" virt="non-virtual"><scope>PsiAsciiFileOutput</scope><name>send_eof</name></member>
+      <member refid="class_psi_ascii_file_output_1ad90b9b03bdf05f14be85fe0735df60a9" prot="public" virt="non-virtual"><scope>PsiAsciiFileOutput</scope><name>send_line</name></member>
+      <member refid="class_psi_ascii_file_output_1a616fa02af7a51f36d62e2aa109035072" prot="public" virt="non-virtual"><scope>PsiAsciiFileOutput</scope><name>~PsiAsciiFileOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
