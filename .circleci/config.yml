@@ -1,0 +1,57 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.3.0
+
+environment:
+  INSTALLZMQ: 1
+  INSTALLRMQ: 0
+  INSTALLAPY: 0
+  INSTALLLPY: 0
+  INSTALLR: 1
+  INSTALLC: 1
+  INSTALLFORTRAN: 1
+  INSTALLSBML: 1
+
+commands:
+  setup-and-run:
+    parameters:
+      pyv:
+        type: string
+      env:
+        type: string
+      command:
+        type: string
+    steps:
+      - checkout
+      - run: python utils/ci_setup.py <<parameters.env>> env <<parameters.pyv>>
+      - run: activate test-environment
+      - run: python utils/ci_setup.py <<parameters.env>> deploy
+      - run:
+          name: Test
+          command: <<parameters.command>>
+      - run:
+          name: Coverage
+          command: codecov
+
+jobs:
+  py36-examples:
+    executor: win/default
+    steps:
+      - setup-and-run:
+          pyv: "3.6"
+          env: "conda"
+          command: "yggtest --ci --test-suite=examples"
+  py37-types:
+    executor: win/default
+    steps:
+      - setup-and-run:
+          pyv: "3.7"
+          env: "conda"
+          command: "yggtest --ci --test-suite=types"
+
+workflows:
+  test:
+    jobs:
+      - py36-examples
+      - py37-types
